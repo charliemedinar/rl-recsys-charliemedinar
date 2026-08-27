@@ -1,24 +1,24 @@
 {
   "modulo": "Aprendizaje por Refuerzo y Sistemas de Recomendacion",
   "prueba": "Bloque 0 / N1",
-  "fecha": "2026-08-24T01:41:03+00:00",
-  "sistema": "Windows 11 (AMD64)",
+  "fecha": "2026-08-27T04:00:59+00:00",
+  "sistema": "Darwin 25.6.0 (x86_64)",
   "python": "3.12.14",
-  "superadas": 7,
+  "superadas": 8,
   "total": 8,
-  "codigo": "UPTC-RL-NO-78-ECB91B",
+  "codigo": "UPTC-RL-OK-88-EEF195",
   "detalle": [
     {
       "n": 1,
       "titulo": "Python instalado y con version suficiente",
       "ok": true,
-      "detalle": "Python 3.12.14 en Windows AMD64"
+      "detalle": "Python 3.12.14 en Darwin x86_64"
     },
     {
       "n": 2,
       "titulo": "Entorno virtual del proyecto activo",
       "ok": true,
-      "detalle": "interprete en C:\\Users\\Usuario\\Downloads\\entrega\\plantilla-repo\\.venv  (es el .venv del proyecto)"
+      "detalle": "interprete en /Users/charlie/Documents/UPTC-especializacionIA/aprendizajeRefuerzo/rl-recsys-charliemedinar/.venv  (es el .venv del proyecto)"
     },
     {
       "n": 3,
@@ -30,7 +30,7 @@
       "n": 4,
       "titulo": "El paquete 'rlrs' se importa",
       "ok": true,
-      "detalle": "rlrs 0.1.0 desde src\\rlrs"
+      "detalle": "rlrs 0.1.0 desde src/rlrs"
     },
     {
       "n": 5,
@@ -48,13 +48,13 @@
       "n": 7,
       "titulo": "Git instalado y configurado",
       "ok": true,
-      "detalle": "git version 2.53.0.windows.1 · JeolUPTC <jorge.otalora@uptc.edu.co>"
+      "detalle": "git version 2.39.5 (Apple Git-154) · charliemedinar <cmedinariano@gmail.com>"
     },
     {
       "n": 8,
       "titulo": "El repositorio esta clonado y con remoto",
-      "ok": false,
-      "detalle": "esta carpeta no es un repositorio git"
+      "ok": true,
+      "detalle": "rama 'main' · 1 commits · remoto https://github.com/charliemedinar/rl-recsys-charliemedinar.git"
     }
   ]
 }
