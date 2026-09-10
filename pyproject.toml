@@ -11,7 +11,12 @@ dependencies = [
 
 [project.optional-dependencies]
 # Se instala en el Bloque 1. No hace falta para la prueba de paso.
-dl = ["torch>=2.2"]
+# torch acotado a <2.3: desde esa version PyTorch dejo de publicar binarios
+# para macOS Intel (x86_64), y en Mac Intel `uv sync` fallaba al resolver.
+# numpy<2 porque ese torch se compilo contra el ABI de NumPy 1.x; mezclarlo
+# con NumPy 2.x no falla al importar, pero puede colapsar en cualquier
+# conversion tensor <-> array (justo lo que hacen dqn.py y pg.py).
+dl = ["torch>=2.2,<2.3", "numpy<2"]
 
 [dependency-groups]
 dev = [
@@ -30,6 +35,9 @@ packages = ["src/rlrs"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+# ``retos/`` no es un paquete instalado: es donde el estudiante escribe sus
+# respuestas. Sin esta linea, las pruebas de los retos no lo encuentran.
+pythonpath = ["."]
 
 [tool.ruff]
 line-length = 100
